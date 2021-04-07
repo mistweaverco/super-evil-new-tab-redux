@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Super Evil New Tab Redux",
+  "version": "0.0.1",
+  "description": "Customize your new tab page with HTML, JavaScript and CSS.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "options.html",
+  "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+  },
+  "sandbox": {
+    "pages": ["sandbox.html"]
+  }
+}
