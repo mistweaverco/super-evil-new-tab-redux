@@ -1,20 +1,22 @@
-const editor_custom_html = ace.edit("custom_html");
-editor_custom_html.setTheme("ace/theme/dracula");
-editor_custom_html.session.setMode("ace/mode/html");
-const editor_custom_css = ace.edit("custom_css");
-editor_custom_css.setTheme("ace/theme/dracula");
-editor_custom_css.session.setMode("ace/mode/css");
-const editor_custom_js = ace.edit("custom_js");
-editor_custom_js.setTheme("ace/theme/dracula");
-editor_custom_js.session.setMode("ace/mode/javascript");
+const editorCustomHTML = window.ace.edit('custom_html')
+editorCustomHTML.setTheme('ace/theme/dracula')
+editorCustomHTML.session.setMode('ace/mode/html')
+
+const editorCustomCSS = window.ace.edit('custom_css')
+editorCustomCSS.setTheme('ace/theme/dracula')
+editorCustomCSS.session.setMode('ace/mode/css')
+
+const editorCustomJS = window.ace.edit('custom_js')
+editorCustomJS.setTheme('ace/theme/dracula')
+editorCustomJS.session.setMode('ace/mode/javascript')
 
 const form = document.getElementById('form')
 
 const saveAll = () => {
   chrome.storage.sync.set({
-    custom_html: editor_custom_html.getValue(),
-    custom_css: editor_custom_css.getValue(),
-    custom_js: editor_custom_js.getValue()
+    custom_html: editorCustomHTML.getValue(),
+    custom_css: editorCustomCSS.getValue(),
+    custom_js: editorCustomJS.getValue()
   })
 }
 
@@ -30,9 +32,8 @@ document.addEventListener('keydown', (evt) => {
   }
 })
 
-
 chrome.storage.sync.get(['custom_html', 'custom_css', 'custom_js'], function (data) {
-  editor_custom_html.setValue(data.custom_html);
-  editor_custom_css.setValue(data.custom_css);
-  editor_custom_js.setValue(data.custom_js);
-});
+  editorCustomHTML.setValue(data.custom_html)
+  editorCustomCSS.setValue(data.custom_css)
+  editorCustomJS.setValue(data.custom_js)
+})

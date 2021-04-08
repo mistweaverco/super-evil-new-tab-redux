@@ -1,0 +1,28 @@
+{
+  "name": "super-evil-new-tab-redux",
+  "version": "0.0.2",
+  "description": "Super Evil New Tab Reborn - Customize your new tab page with HTML, JavaScript and CSS.",
+  "main": "newtab.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1"
+  },
+  "scripts": {
+    "lint": "eslint *.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superevilmegaco/super-evil-new-tab-redux.git"
+  },
+  "author": "Marco Kellershoff <marco@kellershoff.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superevilmegaco/super-evil-new-tab-redux/issues"
+  },
+  "homepage": "https://github.com/superevilmegaco/super-evil-new-tab-redux#readme"
+}
