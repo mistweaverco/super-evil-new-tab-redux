@@ -84,7 +84,7 @@ exportBtn.addEventListener('click', (evt) => {
   configObject.data.html = editorCustomHTML.getValue()
   configObject.data.css = editorCustomCSS.getValue()
   configObject.data.javascript = editorCustomJS.getValue()
-  downloadContent('SuperEvilNewTabRedux.conf.json', JSON.stringify(configObject))
+  downloadContent('SuperEvilNewTabRedux.sentr.json', JSON.stringify(configObject))
 })
 
 importBtn.addEventListener('click', (evt) => {
