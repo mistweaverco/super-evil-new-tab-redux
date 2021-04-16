@@ -1,5 +1,6 @@
-'use strict';
+'use strict'
+
 chrome.webRequest.onHeadersReceived.addListener(
-    onHeadersReceivedDetectConfigFile,
-    {'urls': ['*://*/*.sentr.json'], 'types': ['main_frame']},
-    ['blocking', 'responseHeaders']);
+  window.onHeadersReceivedDetectConfigFile,
+  { urls: ['*://*/*.sentr.json'], types: ['main_frame'] },
+  ['blocking', 'responseHeaders'])
