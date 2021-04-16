@@ -1,6 +1,6 @@
 {
   "name": "super-evil-new-tab-redux",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Super Evil New Tab Reborn - Customize your new tab page with HTML, JavaScript and CSS.",
   "main": "newtab.js",
   "dependencies": {},
