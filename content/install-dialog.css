@@ -4,6 +4,8 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	background-color: #111;
+	color: #fff;
 }
 
 iframe {
@@ -18,3 +20,30 @@ iframe {
 .hidden {
 	display: none;
 }
+
+button {
+        border-radius: 16px;
+        box-shadow: 2px 2px 2px 0 rgb(0 0 0 / 20%);
+        margin-top: 24px;
+        margin-bottom: 24px;
+        padding: 8px 32px;
+	color: #fff;
+	font-weight: bold;
+}
+
+#install_btn {
+        background-color: #0079d3;
+	border: 1px solid #0079d3;
+}
+
+#preview_config_btn,
+#view_source_btn {
+        background-color: #d3b900;
+	border: 1px solid #d3b900;
+}
+
+#cancel_btn {
+        background-color: #7800d3;
+	border: 1px solid #7800d3;
+}
+
