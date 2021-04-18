@@ -1,14 +1,17 @@
 const editorCustomHTML = window.ace.edit('custom_html')
 editorCustomHTML.setTheme('ace/theme/dracula')
 editorCustomHTML.session.setMode('ace/mode/html')
+editorCustomHTML.session.setOptions({ tabSize: 2, useSoftTabs: false })
 
 const editorCustomCSS = window.ace.edit('custom_css')
 editorCustomCSS.setTheme('ace/theme/dracula')
 editorCustomCSS.session.setMode('ace/mode/css')
+editorCustomCSS.session.setOptions({ tabSize: 2, useSoftTabs: false })
 
 const editorCustomJS = window.ace.edit('custom_js')
 editorCustomJS.setTheme('ace/theme/dracula')
 editorCustomJS.session.setMode('ace/mode/javascript')
+editorCustomJS.session.setOptions({ tabSize: 2, useSoftTabs: false })
 
 const form = document.getElementById('form')
 const file = document.getElementById('file')
