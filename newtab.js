@@ -20,6 +20,5 @@ sandbox.addEventListener('load', () => {
         value: data.custom_js
       }, '*')
     }
-    console.log(data)
   })
 })
