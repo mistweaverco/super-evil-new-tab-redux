@@ -9,6 +9,7 @@ zip -q -r "$FILENAME" \
 	content \
 	icons \
 	manifest.json \
+	bgcolor.js \
 	newtab.* \
 	options.* \
 	sandbox.*
